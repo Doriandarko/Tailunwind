@@ -10,14 +10,14 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-export type VibeType = "Tailwind CSS" | "Language to classes";
+export type VibeType = 'Tailwind to CSS' | 'Language to classes';
 
 interface DropDownProps {
   vibe: VibeType;
   setVibe: (vibe: VibeType) => void;
 }
 
-let vibes: VibeType[] = ["Tailwind CSS", "Language to classes"];
+let vibes: VibeType[] = ["Tailwind to CSS", "Language to classes"];
 
 export default function DropDown({ vibe, setVibe }: DropDownProps) {
   return (
